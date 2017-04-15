@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { LastRaceComponent } from './last-race/last-race.component';
+import { DriverStandingsComponent } from './driver-standings/driver-standings.component';
+import { ConstructorStandingsComponent } from './constructor-standings/constructor-standings.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LastRaceComponent,
+    DriverStandingsComponent,
+    ConstructorStandingsComponent
   ],
   imports: [
     BrowserModule,

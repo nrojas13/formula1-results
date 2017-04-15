@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <h1 class="app-title">{{title}}</h1>
+  <hr>
+  <div class="row">
+    <app-last-race class="col-sm-6"></app-last-race>
+    <div class="col-sm-6">
+      <app-driver-standings></app-driver-standings>
+      <app-constructor-standings></app-constructor-standings>
+    </div>
+  </div>
+</div>
