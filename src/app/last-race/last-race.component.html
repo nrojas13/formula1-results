@@ -16,7 +16,7 @@
   <tbody>
     <tr *ngFor="let result of raceResultPartial">
       <td>{{result.positionText}}</td>
-      <td><a href="{{result.Driver.url}}" target="_blank">{{result.Driver.givenName}} {{result.Driver.familyName}}</a></td>
+      <td><a href="{{result.Driver.url}}" target="_blank"><span [ngClass]="getFlag(result)"></span> {{result.Driver.givenName}} {{result.Driver.familyName}}</a></td>
       <td><a href="{{result.Constructor.url}}" target="_blank">{{result.Constructor.name}}</a></td>
       <td>{{result.grid}}</td>
       <td>{{getTime(result)}}</td>

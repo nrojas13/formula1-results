@@ -15,7 +15,7 @@
   <tbody>
     <tr *ngFor="let standing of driverStandingsPartial">
       <td>{{standing.positionText}}</td>
-      <td><a href="{{standing.Driver.url}}" target="_blank">{{standing.Driver.givenName}} {{standing.Driver.familyName}}</a></td>
+      <td><a href="{{standing.Driver.url}}" target="_blank"><span [ngClass]="getFlag(standing)"></span> {{standing.Driver.givenName}} {{standing.Driver.familyName}}</a></td>
       <td><a href="{{standing.Constructors[0].url}}" target="_blank">{{standing.Constructors[0].name}}</a></td>
       <td>{{standing.points}}</td>
       <td>{{standing.wins}}</td>

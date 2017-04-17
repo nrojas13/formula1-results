@@ -15,7 +15,7 @@
   <tbody>
     <tr *ngFor="let standing of constructorStandingsPartial">
       <td>{{standing.positionText}}</td>
-      <td><a href="{{standing.Constructor.url}}" target="_blank">{{standing.Constructor.name}}</a></td>
+      <td><a href="{{standing.Constructor.url}}" target="_blank"><span [ngClass]="getFlag(standing)"></span> {{standing.Constructor.name}}</a></td>
       <td>{{standing.Constructor.nationality}}</td>
       <td>{{standing.points}}</td>
       <td>{{standing.wins}}</td>

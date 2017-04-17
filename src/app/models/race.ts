@@ -10,5 +10,5 @@ export class RaceModel {
     Circuit: CircuitModel;
     date: string;
     time: string;
-    Results: ResultModel[];
+    Results ?: ResultModel[];
 }

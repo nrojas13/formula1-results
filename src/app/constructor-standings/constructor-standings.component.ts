@@ -53,4 +53,48 @@ export class ConstructorStandingsComponent implements OnInit {
       this.showAllText = "Show Less";
     } 
   }
+
+  getFlag(result) {
+    let nationality = result.Constructor.nationality;
+    let isoCode = '';
+    if(nationality === 'British') 
+      isoCode = 'gb';
+    else if(nationality === 'Finnish')
+      isoCode = 'fi';
+    else if(nationality === 'German') 
+      isoCode = 'de';
+    else if(nationality === 'Mexican')
+      isoCode = 'mx';
+    else if(nationality === 'Dutch')
+      isoCode = 'nl';
+    else if(nationality === 'Swedish')
+      isoCode = 'se';
+    else if(nationality === 'Spanish')
+      isoCode = 'es';
+    else if(nationality === 'Italian')
+      isoCode = 'it';
+    else if(nationality === 'French')
+      isoCode = 'fr';
+    else if(nationality === 'Russian')
+      isoCode = 'ru';
+    else if(nationality === 'Danish')
+      isoCode = 'dk';
+    else if(nationality === 'Brazilian')
+      isoCode = 'br';
+    else if(nationality === 'Australian')
+      isoCode = 'au';
+    else if(nationality === 'Canadian')
+      isoCode = 'ca';
+    else if(nationality === 'Austrian')
+      isoCode = 'at';
+    else if(nationality === 'Indian')
+      isoCode = 'in';
+    else if(nationality === 'American')
+      isoCode = 'us';
+    else if(nationality === 'Swiss')
+      isoCode = 'ch';
+
+    let returnString = "flag-icon flag-icon-"+isoCode;
+    return returnString;
+  }
 }
